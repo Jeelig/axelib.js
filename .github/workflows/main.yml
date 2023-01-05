@@ -23,7 +23,7 @@ jobs:
       - name: Update version
         run: |
           echo "VERSION -> ${{ github.event.release.tag_name }}"
-          echo "Something : "
+          echo "Something -> ${{ github.event.release.body }} "
       
       # Notify Via Email
       - name: Notify
